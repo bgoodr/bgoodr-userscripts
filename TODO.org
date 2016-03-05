@@ -8,5 +8,6 @@
        github so that I can pull them down to other machines.
        1. Reference material gleaned from
           http://stackoverflow.com/a/30827553/257924
- 2. [ ] Upload existing scripts to GitHub
- 3. [ ] Continue learning by adding new scripts.
+ 2. [X] Upload existing scripts to GitHub
+ 3. [ ] Change the namespace to point into the github account
+ 4. [ ] Continue learning by adding new scripts.
