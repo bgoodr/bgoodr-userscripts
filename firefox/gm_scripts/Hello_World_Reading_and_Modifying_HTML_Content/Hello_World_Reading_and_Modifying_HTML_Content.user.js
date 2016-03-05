@@ -29,7 +29,7 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
         title = document.getElementById("eow-title").textContent;
         if (debug) console.log("debug found title ", title);
     }
- 
+    
     var as = document.getElementsByTagName("a");
     for(var i=0;i<as.length;i++)
     {
@@ -44,31 +44,31 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
                 if (debug) console.log("debug userName ", userName);
             }
             else
-            if(cls.indexOf("yt-user-videos") >= 0)
+                if(cls.indexOf("yt-user-videos") >= 0)
             {
                 userVideos = as[i].textContent;
                 if (debug) console.log("debug userVideos ", userVideos);
-             }
+            }
         }
- 
+        
     }
- 
+    
     if(document.getElementById("watch7-views-info"))
     {
         if (debug) console.log("debug got watch7-views-info");
 
         var viewsObj = document.getElementById("watch7-views-info");
- 
+        
         var spans =viewsObj.getElementsByTagName("span");
         for(var i=0;i<spans.length;i++)
         {
-                var cls =spans[i].getAttribute("class");
-                if(cls.indexOf("watch-view-count") >= 0)
-                {
-                    views = spans[i].textContent;
-                }
+            var cls =spans[i].getAttribute("class");
+            if(cls.indexOf("watch-view-count") >= 0)
+            {
+                views = spans[i].textContent;
+            }
         }
- 
+        
     }
     var div=document.createElement("div");
     div.setAttribute("style",";border:1px solid red;padding:10px 10px 10px 100px;");
@@ -77,7 +77,7 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
     div.innerHTML +="<b>Uploaded Videos: </b>"+userVideos+"<br>";
     div.innerHTML +="<b>Total Views: </b>"+views+"<br>";
     document.body.insertBefore(div,document.body.firstChild);
- 
+    
     //hide sidebar
     var sidebar = document.getElementById("watch7-sidebar");
     if(sidebar)
