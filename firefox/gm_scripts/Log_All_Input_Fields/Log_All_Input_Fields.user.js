@@ -11,10 +11,6 @@ for(var i=0;i<inputs.length;i++)
 {
     if(inputs[i].type == "text")
     {
-        // console.log("bgdbg got an input field");
-        console.log("bgdbg", inputs[i]);
-        // inputs[i].value = "hayageek.com";
+        console.log("Found input field: ", inputs[i]);
     }
 }
-// //Submit form
-// document.forms[0].submit();
