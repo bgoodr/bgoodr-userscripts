@@ -57,7 +57,6 @@ then
   exit 1
 fi
 
-
 # Avoid modifying existing "real" greasemonkey script directories. Let
 # the user handle that manually:
 if [ -d $gm_scripts_dir ]
@@ -73,6 +72,6 @@ then
   rm -rf $gm_scripts_dir
 fi
 
-echo "Note: Creating link"
+echo "Note: Creating link from $GIT_GM_SCRIPTS_DIR to $gm_scripts_dir"
 set -x
 ln -s $GIT_GM_SCRIPTS_DIR $gm_scripts_dir
