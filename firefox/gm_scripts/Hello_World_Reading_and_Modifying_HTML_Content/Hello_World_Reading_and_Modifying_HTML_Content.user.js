@@ -19,7 +19,7 @@ var debug = 1;
 
 if (debug) console.log("debug window.location.href ", window.location.href);
 
-if(window.location.href.indexOf("v=") > 0) //If it is a valid video
+if( 0 && window.location.href.indexOf("v=") > 0) //If it is a valid video
 {
     var userName="";
     var title="";
@@ -84,4 +84,15 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
     {
         sidebar.style.display="none";
     }
+} else {
+    if (debug) console.log("debug Just adding hardcoded stuff to the page. Why won't it display?");
+
+    var div=document.createElement("div");
+    div.setAttribute("style",";border:1px solid red;padding:10px 10px 10px 100px;");
+    var title = "some dummy title here";
+    div.innerHTML ="<h1>"+title+"</h1><br>";
+    div.innerHTML +="<b>Something important 1:</b>the value 1<br>";
+    div.innerHTML +="<b>Something important 2:</b>the value 2<br>";
+    document.body.insertBefore(div,document.body.firstChild);
+
 }
