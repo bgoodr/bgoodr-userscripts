@@ -13,4 +13,6 @@
  4. [ ] Find a way to change the installurl and update urls in the
     config.xml to point to the github site and not have the fully
     qualified path to the firefox profile directory.
- 5. [ ] Continue learning by adding new scripts.
+ 5. [ ] Update http://stackoverflow.com/a/30827553/257924 with a
+    "Thank You!" answer.
+ 6. [ ] Continue learning by adding new scripts.
