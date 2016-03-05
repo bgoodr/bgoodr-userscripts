@@ -3,12 +3,18 @@
 // @namespace   https://github.com/bgoodr/bgoodr-userscripts
 // @include     http://*.youtube.*
 // @include     https://*.youtube.*
+// Avoid multiple execution in iFrames: http://stackoverflow.com/questions/4190442/run-a-greasemonkey-script-only-once-per-page-load?rq=1
+// @noframes
 // @version     1
 // ==/UserScript==
 
 // Hello_World_Reading_and_Modifying_HTML_Content.user.js
 
 // Attribution: Originally from: http://hayageek.com/greasemonkey-tutorial/#read-modify
+
+// TODO: View it from https://www.youtube.com/watch?v=CIBIqaeiE2M and it does not show anything.
+
+console.log("window.location.href ", window.location.href);
 
 if(window.location.href.indexOf("v=") > 0) //If it is a valid video
 {
