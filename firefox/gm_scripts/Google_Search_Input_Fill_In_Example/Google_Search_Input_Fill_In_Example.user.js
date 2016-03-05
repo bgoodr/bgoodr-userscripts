@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name        Google Search Input Fill In Example
-// @namespace   http://hayageek.com
+// @namespace   https://github.com/bgoodr/bgoodr-userscripts
 // @include     http://www.google.*
 // @include     https://www.google.*
 // @version     1
 // ==/UserScript==
+
+// Attribution: Original version of this script was from http://hayageek.com/greasemonkey-tutorial/
 
 //Change the textbox value
 if(window.location.href.indexOf("q=") < 0) //To avoid recursion

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Log All Input Fields 
-// @namespace   http://bgoodr.com
+// @namespace   https://github.com/bgoodr/bgoodr-userscripts
 // @include     http://www.google.*
 // @include     https://www.google.*
 // @version     1

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Hello World
-// @namespace   http://hayageek.com
+// @namespace   https://github.com/bgoodr/bgoodr-userscripts
 // @include     https://greasyfork.org/*
 // @include     http://www.google.com/*
 // @include     https://www.google.com/*

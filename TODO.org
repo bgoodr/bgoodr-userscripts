@@ -9,5 +9,8 @@
        1. Reference material gleaned from
           http://stackoverflow.com/a/30827553/257924
  2. [X] Upload existing scripts to GitHub
- 3. [ ] Change the namespace to point into the github account
- 4. [ ] Continue learning by adding new scripts.
+ 3. [X] Change the namespace to point into the github account
+ 4. [ ] Find a way to change the installurl and update urls in the
+    config.xml to point to the github site and not have the fully
+    qualified path to the firefox profile directory.
+ 5. [ ] Continue learning by adding new scripts.
