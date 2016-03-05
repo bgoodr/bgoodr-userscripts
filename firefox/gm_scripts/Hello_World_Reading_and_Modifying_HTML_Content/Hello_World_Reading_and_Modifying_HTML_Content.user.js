@@ -14,7 +14,10 @@
 
 // TODO: View it from https://www.youtube.com/watch?v=CIBIqaeiE2M and it does not show anything.
 
-console.log("window.location.href ", window.location.href);
+// Enable this flag for debugging by setting it to 1:
+var debug = 0;
+
+if (debug) console.log("debug window.location.href ", window.location.href);
 
 if(window.location.href.indexOf("v=") > 0) //If it is a valid video
 {
@@ -22,8 +25,10 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
     var title="";
     var userVideos="";
     var views="";
-    if(document.getElementById("eow-title"))
+    if(document.getElementById("eow-title")) {
         title = document.getElementById("eow-title").textContent;
+        if (debug) console.log("debug found title ", title);
+    }
  
     var as = document.getElementsByTagName("a");
     for(var i=0;i<as.length;i++)
