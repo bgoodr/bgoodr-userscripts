@@ -8,6 +8,8 @@
 // @version     1
 // ==/UserScript==
 
+// Attribution: Original version of this script was from http://hayageek.com/greasemonkey-tutorial/
+
 // TODO: The button shows up in both the hayageek.com and the
 // www.google.com page, but clicking on the button in the
 // www.google.com page does nothing.
