@@ -1,8 +1,4 @@
 <UserScriptConfig>
-	<Script basedir="Webmonkeys_Hello_World" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="A basic example of Greasemonkey that causes an alert at each page load." enabled="false" filename="helloworld.user.js" installTime="1457179132000" modified="1457179132000" name="Webmonkey's Hello World" namespace="http://www.webmonkey.com" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="072df64c-a240-47df-8ef4-5edb47352abd" version="null" installurl="http://www.wired.com/wp-content/uploads/archive/wired/archive/webmonkey/greasemonkey/helloworld.user.js" updateurl="http://www.wired.com/wp-content/uploads/archive/wired/archive/webmonkey/greasemonkey/helloworld.user.js">
-		<Grant>none</Grant>
-		<Include>*</Include>
-	</Script>
 	<Script basedir="Hello_World" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="false" filename="Hello_World.user.js" installTime="1457179810000" modified="1457181526000" name="Hello World" namespace="http://hayageek.com" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="94f7ca5a-40ec-47c1-a0b6-ce48466fba1f" version="1" installurl="file:///home/brentg/.mozilla/firefox/ztagv7mv.default/gm_scripts/Hello_World/Hello_World.user.js" updateurl="file:///home/brentg/.mozilla/firefox/ztagv7mv.default/gm_scripts/Hello_World/Hello_World.user.js">
 		<Grant>none</Grant>
 		<Include>https://greasyfork.org/*</Include>
