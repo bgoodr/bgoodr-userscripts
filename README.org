@@ -1,0 +1,12 @@
+* TODO Automatically update Firefox gm_scripts directory
+
+ 1. [X] Create link installer: firefox/install_gm_scripts_dir_link.sh
+    1. [X] The gm_scripts directory needs to be a link pointing back
+       into my cloned git repo, so that I can locally develop scripts
+       using a real text editor and not the minimal text editors
+       launched by Firefox (gedit?), and the push the changes up to
+       github so that I can pull them down to other machines.
+       1. Reference material gleaned from
+          http://stackoverflow.com/a/30827553/257924
+ 2. [ ] Upload existing scripts to GitHub
+ 3. [ ] Continue learning by adding new scripts.
