@@ -1,17 +1,28 @@
 #!/bin/bash
 
+usage () {
+  cat <<EOF
+Usage: $0 GIT_GM_SCRIPTS_DIR
+
+Install a symbolic link from the gm_scripts directory in the default
+Firefox profile directory, to the directory given by
+GIT_GM_SCRIPTS_DIR.
+
+If the gm_scripts directory is already a symbolic link, nothing is
+done.
+
+If the gm_scripts directory is a real directory, nothing is done
+either. The user will likely need to copy the directory off first,
+commit it to GitHub, and then run the script on it.
+
+EOF
+}
+
 GIT_GM_SCRIPTS_DIR="$1"
 if [ -z "$GIT_GM_SCRIPTS_DIR" ]
 then
-  if [ -d ./gm_scripts ]
-  then
-    GIT_GM_SCRIPTS_DIR=$(readlink -f ./gm_scripts)
-    echo "Note: No GIT_GM_SCRIPTS_DIR supplied. Defaulting to:"
-    echo "      $GIT_GM_SCRIPTS_DIR"
-  else
-    echo "USAGE: $0 GIT_GM_SCRIPTS_DIR"
-    exit 0
-  fi
+  usage
+  exit 0
 fi
 
 # No, don't do this: pkill firefox
