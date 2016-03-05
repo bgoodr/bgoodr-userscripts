@@ -14,7 +14,7 @@
 		<Include>http://www.google.*</Include>
 		<Include>https://www.google.*</Include>
 	</Script>
-	<Script basedir="Log_All_Input_Fields" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Log_All_Input_Fields.user.js" installTime="1457184622000" modified="1457185315000" name="Log All Input Fields" namespace="http://bgoodr.com" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="90742da7-2563-4d88-9712-2faf84a4d975" version="1" installurl="file:///home/brentg/.mozilla/firefox/ztagv7mv.default/gm_scripts/Log_All_Input_Fields/Log_All_Input_Fields.user.js" updateurl="file:///home/brentg/.mozilla/firefox/ztagv7mv.default/gm_scripts/Log_All_Input_Fields/Log_All_Input_Fields.user.js">
+	<Script basedir="Log_All_Input_Fields" checkRemoteUpdates="1" dependhash="da39a3ee5e6b4b0d3255bfef95601890afd80709" description="" enabled="true" filename="Log_All_Input_Fields.user.js" installTime="1457184622000" modified="1457190839000" name="Log All Input Fields" namespace="http://bgoodr.com" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="90742da7-2563-4d88-9712-2faf84a4d975" version="1" installurl="file:///home/brentg/.mozilla/firefox/ztagv7mv.default/gm_scripts/Log_All_Input_Fields/Log_All_Input_Fields.user.js" updateurl="file:///home/brentg/.mozilla/firefox/ztagv7mv.default/gm_scripts/Log_All_Input_Fields/Log_All_Input_Fields.user.js">
 		<Grant>none</Grant>
 		<Include>http://www.google.*</Include>
 		<Include>https://www.google.*</Include>
