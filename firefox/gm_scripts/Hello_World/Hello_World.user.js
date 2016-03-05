@@ -8,7 +8,9 @@
 // @version     1
 // ==/UserScript==
 
-
+// TODO: The button shows up in both the hayageek.com and the
+// www.google.com page, but clicking on the button in the
+// www.google.com page does nothing.
 
 var input = document.createElement('input');
 input.type = 'button';
