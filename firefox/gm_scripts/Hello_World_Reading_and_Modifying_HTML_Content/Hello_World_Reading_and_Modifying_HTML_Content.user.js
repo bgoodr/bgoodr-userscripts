@@ -15,7 +15,7 @@
 // TODO: View it from https://www.youtube.com/watch?v=CIBIqaeiE2M and it does not show anything.
 
 // Enable this flag for debugging by setting it to 1:
-var debug = 0;
+var debug = 1;
 
 if (debug) console.log("debug window.location.href ", window.location.href);
 
@@ -36,15 +36,18 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
         var cls =as[i].getAttribute("class");
         if(cls)
         {
+            if (debug) console.log("debug class as[i]", as[i]);
             GM_log(cls+"<br>");
             if(cls.indexOf("yt-user-name") >= 0)
             {
                 userName = as[i].textContent;
+                if (debug) console.log("debug userName ", userName);
             }
             else
             if(cls.indexOf("yt-user-videos") >= 0)
             {
                 userVideos = as[i].textContent;
+                if (debug) console.log("debug userVideos ", userVideos);
              }
         }
  
@@ -52,6 +55,8 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
  
     if(document.getElementById("watch7-views-info"))
     {
+        if (debug) console.log("debug got watch7-views-info");
+
         var viewsObj = document.getElementById("watch7-views-info");
  
         var spans =viewsObj.getElementsByTagName("span");
