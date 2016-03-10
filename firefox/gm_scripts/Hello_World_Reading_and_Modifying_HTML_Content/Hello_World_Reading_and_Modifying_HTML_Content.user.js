@@ -46,7 +46,8 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
             // The script stops working and does not add any
             // div to the page. I not see any error in the
             // console? Why?
-            
+
+            // Bug in original code: neither yt-user-name or yt-user-videos ever matches:
             if(cls.indexOf("yt-user-name") >= 0)
             {
                 userName = as[i].textContent;
@@ -78,16 +79,6 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
         }
     }
 
-    if (0) {
-        var div=document.createElement("div");
-        div.setAttribute("style",";border:1px solid red;padding:10px 10px 10px 100px;");
-        var title = "some dummy title here";
-        div.innerHTML ="<h1>"+title+"</h1><br>";
-        div.innerHTML +="<b>Something important 3 yyyzzz:</b>the value 3<br>";
-        div.innerHTML +="<b>Something important 4:</b>the value 4<br>";
-        document.body.insertBefore(div,document.body.firstChild);
-    }
-
     var div=document.createElement("div");
     div.setAttribute("style",";border:1px solid red;padding:10px 10px 10px 100px;");
     div.innerHTML ="<h1>"+title+"</h1><br>";
@@ -96,15 +87,12 @@ if(window.location.href.indexOf("v=") > 0) //If it is a valid video
     div.innerHTML +="<b>Total Views: </b>"+views+"<br>";
     document.body.insertBefore(div,document.body.firstChild);
 
-    if (0) {
-        
-        //hide sidebar
-        var sidebar = document.getElementById("watch7-sidebar");
-        if(sidebar)
-        {
-            sidebar.style.display="none";
-        }
-        
+    //hide sidebar
+    var sidebar = document.getElementById("watch7-sidebar");
+    if(sidebar)
+    {
+        sidebar.style.display="none";
     }
+
 
 }
