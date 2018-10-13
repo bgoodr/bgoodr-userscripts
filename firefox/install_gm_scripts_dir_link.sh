@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "ERROR: This script no longer works as someone changed how gm scripts are stored under the firefox profile directory."
+exit 1
+
 usage () {
   cat <<EOF
 Usage: $0 GIT_GM_SCRIPTS_DIR
@@ -24,6 +27,9 @@ then
   usage
   exit 0
 fi
+
+# Make GIT_GM_SCRIPTS_DIR a fully-qualified path:
+GIT_GM_SCRIPTS_DIR=$(readlink -f $GIT_GM_SCRIPTS_DIR)
 
 # No, don't do this: pkill firefox
 # Let the user decide when to close firefox.

@@ -10,9 +10,15 @@
           http://stackoverflow.com/a/30827553/257924
  2. [X] Upload existing scripts to GitHub
  3. [X] Change the namespace to point into the github account
- 4. [ ] Find a way to change the installurl and update urls in the
+ 4. [X] Find a way to change the installurl and update urls in the
     config.xml to point to the github site and not have the fully
     qualified path to the firefox profile directory.
+    1. [X] FAIL: [2018-10-13 Sat 08:07] I came back to this and
+       discovered that something changed where greasemonkey stores the
+       userscripts.  So the firefox/install_gm_scripts_dir_link.sh is
+       not going to work anymore, and I will have to install them
+       manually each and every time through Firefox. :(
+    2. [X] disable firefox/install_gm_scripts_dir_link.sh
  5. [ ] Update http://stackoverflow.com/a/30827553/257924 with a
     "Thank You!" answer.
  6. [ ] Continue learning by adding new scripts.
