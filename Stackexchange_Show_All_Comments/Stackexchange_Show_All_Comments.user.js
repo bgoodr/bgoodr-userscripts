@@ -4,7 +4,7 @@
 // @namespace      https://github.com/bgoodr/bgoodr-userscripts/tree/master/firefox/gm_scripts
 // @description    Alway show all comments each time a stackexchange site page is loaded
 // @include        http://*.stackexchange.com/*
-// @include        http://stackoverflow.com/*
+// @include        https://stackoverflow.com/*
 // @include        http://meta.stackoverflow.com/*
 // @include        http://serverfault.com/*
 // @include        http://meta.serverfault.com/*
@@ -18,11 +18,25 @@
 function fix() {
 
     // Based upon https://greasyfork.org/en/scripts/3642-comment-separator-fix/code
-    
-    var elems = document.getElementsByClassName("js-link-separator");
+
+    // Click the "js-show-link" elements:
+    //
+    //   Problem: Clicking on the "js-show-link" elements does expand them, but
+    //   does not keep the relative position of the page intact.  e.g.,
+    //   if you navigate to:
+    //
+    //      https://stackoverflow.com/questions/1425892/how-do-you-merge-two-git-repositories/1425914#
+    //
+    //   This script then runs but then shows the top of the page, not
+    //   the place right at the answer "1425914" in the URL above.
+    //
+    var elems = document.getElementsByClassName("js-show-link");
+    console.log("debug: ", elems.length)
     for (var i = 0; i < elems.length; i++)
         elems[i].click();
-    
+
+    // Old code I'm keeping around that originated in https://greasyfork.org/en/scripts/3642-comment-separator-fix/code :
+    //
     // var separators = document.getElementsByClassName("js-link-separator");
     // for (var i = 0; i < separators.length; i++) {
     //     if (separators[i].className === "js-link-separator dno") {
