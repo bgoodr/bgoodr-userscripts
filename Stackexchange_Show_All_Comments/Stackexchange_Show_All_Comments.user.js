@@ -30,6 +30,14 @@ function fix() {
     //   This script then runs but then shows the top of the page, not
     //   the place right at the answer "1425914" in the URL above.
     //
+    //   This also occurs on:
+    //
+    //     https://stackoverflow.com/questions/55895012/python-3-script-using-relative-imports-on-standard-input-gives-error-no-module/55895684#comment98633410_55895684
+    //
+    //   So, for now, I'm going to have to give up on this script, as
+    //   I do need to have direct links to specific comments working.
+    //
+    //
     var elems = document.getElementsByClassName("js-show-link");
     console.log("debug: ", elems.length)
     for (var i = 0; i < elems.length; i++)
